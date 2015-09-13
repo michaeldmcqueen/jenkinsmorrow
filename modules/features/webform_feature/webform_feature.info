@@ -1,0 +1,14 @@
+name = Webform Feature
+core = 7.x
+package = JM
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = strongarm
+dependencies[] = text
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[field_instance][] = node-webform-body
+features[node][] = webform
+features_exclude[dependencies][static_page] = static_page
+mtime = 1442108208
+project path = profiles/base/modules/features
