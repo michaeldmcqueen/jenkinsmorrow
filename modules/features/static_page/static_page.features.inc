@@ -8,6 +8,9 @@
  * Implements hook_ctools_plugin_api().
  */
 function static_page_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "ds" && $api == "ds") {
+    return array("version" => "1");
+  }
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -29,4 +32,21 @@ function static_page_node_info() {
   );
   drupal_alter('node_info', $items);
   return $items;
+}
+
+/**
+ * Implements hook_weight_features_default_settings().
+ */
+function static_page_weight_features_default_settings() {
+  $settings = array();
+
+  $settings['static_page'] = array(
+    'enabled' => 0,
+    'range' => 20,
+    'menu_weight' => 0,
+    'default' => 0,
+    'sync_translations' => 0,
+  );
+
+  return $settings;
 }
