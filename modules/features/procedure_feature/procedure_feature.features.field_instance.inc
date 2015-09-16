@@ -18,7 +18,7 @@ function procedure_feature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -53,7 +53,7 @@ function procedure_feature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -61,7 +61,7 @@ function procedure_feature_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'field_collection_item',
-    'fences_wrapper' => 'div',
+    'fences_wrapper' => 'h6',
     'field_name' => 'field_procedure_title',
     'label' => 'Title',
     'required' => 0,
@@ -92,7 +92,7 @@ function procedure_feature_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -132,13 +132,13 @@ function procedure_feature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'field_collection',
         'settings' => array(
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_fields',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',

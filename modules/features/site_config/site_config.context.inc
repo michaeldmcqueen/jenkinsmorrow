@@ -42,6 +42,12 @@ function site_config_context_default_contexts() {
           'region' => 'main_nav',
           'weight' => '-10',
         ),
+        'views-header_image-block' => array(
+          'module' => 'views',
+          'delta' => 'header_image-block',
+          'region' => 'preface',
+          'weight' => '-10',
+        ),
         'system-help' => array(
           'module' => 'system',
           'delta' => 'help',

@@ -1,4 +1,5 @@
 header.site-header {
+  @include clearfix;
   padding: 3em 0;
 }
 

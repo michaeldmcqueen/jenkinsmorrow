@@ -80,7 +80,8 @@ nav {
     text-decoration: none;
     &.active {
       @include breakpoint($tablet, $no-query: '.no-mq') {
-        border-bottom: 2px solid #fff;
+        border-bottom: 2px solid #000;
+        padding-bottom: 1em;
       }
     }
   }

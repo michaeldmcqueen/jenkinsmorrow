@@ -17,9 +17,11 @@
 
 <?php if ($page['preface']): ?>
   <div class="preface cleafix">
-    <div class="wrap">
+    <picture class="preface-bar">
+      <source type="image/svg+xml" srcset="/profiles/base/themes/jenkinsmorrow/assets/images/preface-bar.svg">
+      <img src="/profiles/base/themes/jenkinsmorrow/assets/images/preface-bar.png" alt="Jenkins & Morrow">
+    </picture>
       <?php print render($page['preface']); ?>
-    </div>
   </div>
 <?php endif; ?>
 <!-- Close Preface -->

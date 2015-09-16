@@ -1,0 +1,14 @@
+.field-collection-item-field-procedure-detail {
+  padding: 1em 0;
+  h6 {
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      float: left;
+      width: 150px;
+      text-align: right;
+      margin: 0 2em 0 0;
+    }
+  }
+  .procedure-detail {
+    overflow: hidden;
+  }
+}
