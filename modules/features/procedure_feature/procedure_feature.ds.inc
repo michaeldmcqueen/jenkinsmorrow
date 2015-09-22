@@ -61,6 +61,18 @@ function procedure_feature_ds_field_settings_info() {
         'class' => '',
       ),
     ),
+    'body' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => 'intro',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
   );
   $export['node|procedures|default'] = $ds_fieldsetting;
 

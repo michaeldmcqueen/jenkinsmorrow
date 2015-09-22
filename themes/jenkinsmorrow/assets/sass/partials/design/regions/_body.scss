@@ -9,9 +9,10 @@ body {
   padding: 0;
   background-color: $site-bg;
   border-top: 5px solid $color-two;
+  overflow-x: hidden;
 }
 .wrap {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 1em;
   @include breakpoint($tablet, $no-query: '.no-mq') {

@@ -27,6 +27,18 @@ function staff_feature_ds_field_settings_info() {
         'class' => '',
       ),
     ),
+    'field_position' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'fi' => TRUE,
+          'fi-el' => 'h6',
+          'fi-cl' => '',
+          'fi-at' => '',
+          'fi-def-at' => FALSE,
+          'fi-odd-even' => FALSE,
+        ),
+      ),
+    ),
   );
   $export['node|staff|teaser'] = $ds_fieldsetting;
 

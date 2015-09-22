@@ -1,11 +1,11 @@
 header.site-header {
   @include clearfix;
-  padding: 3em 0;
+  padding: 2em 0 1em;
 }
 
 .logo {
   @include breakpoint($tablet, $no-query: '.no-mq') {
-    @include grid-span(3.5,1);
+    @include grid-span(4,1);
   }
 }
 nav.main-navigation {

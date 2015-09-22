@@ -13,6 +13,7 @@ regions[preface] = 'Preface'
 regions[help] = 'Help'
 regions[sidebar_first] = 'Sidebar First'
 regions[content] = 'Main Region'
+regions[postscript] = 'Postscript'
 regions[sidebar_second] = 'Sidebar Second'
 regions[footer] = 'Footer'
 

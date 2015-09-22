@@ -1,10 +1,12 @@
 <header role="banner" class="site-header">
   <div class="wrap">
     <!-- Logo -->
+    <a href="/">
     <picture class="logo">
       <source type="image/svg+xml" srcset="/profiles/base/themes/jenkinsmorrow/assets/images/logos/logo.svg">
       <img src="/profiles/base/themes/jenkinsmorrow/assets/images/logos/logo.png" alt="Jenkins & Morrow">
     </picture>
+  </a>
   <!-- Main Navigation -->
   <?php if ($page['main_nav']): ?>
     <nav role="navigation" class="main-navigation">
@@ -48,10 +50,17 @@
     <?php endif; ?>
   </div>
 </main>
+
+<?php if ($page['postscript']): ?>
+  <div class="postscript wrap">
+    <?php print render($page['postscript']); ?>
+  </div>
+<?php endif; ?>
+
 <footer>
-  <?php if ($page['footer']): ?>
     <div class="wrap">
-      <?php print render($page['footer']); ?>
+      <h6>Jenkins and Morrow</h6>
+      <p>216 Fountain Ct., Suite 110, Lexington, KY 40509  •  859-264-1898</p>
+      <p>200 City Hill Dr, #102, London, KY 40741  •  606-877-8811</p>
     </div>
-  <?php endif; ?>
 </footer>
