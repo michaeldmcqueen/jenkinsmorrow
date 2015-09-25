@@ -116,6 +116,7 @@ function static_page_views_default_views() {
     'colorbox_caption_custom' => '',
   );
   $handler->display->display_options['fields']['field_gallery_images']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_gallery_images']['separator'] = '';
   $export['gallery'] = $view;
 
   return $export;

@@ -1,14 +1,17 @@
 nav {
-  font-family: $heading-font-family;
   padding: 0;
-  font-size: 110%;
+  font-size: 95%;
+  @include breakpoint($tablet, $no-query: '.no-mq') {
+    font-size: 95%;
+  }
   ul.menu {
     margin: 0;
-    padding: 0;
+    padding: 1em 0 0;
     position: relative;
     @include breakpoint($tablet, $no-query: '.no-mq') {
       text-align: center;
       margin: 0;
+      padding: 0;
       ul {
         position: absolute;
         text-align: left;
@@ -50,7 +53,7 @@ nav {
   }
   li.leaf, li, li.expanded {
     list-style: none;
-    padding: .5em .25em;
+    padding: .5em;
     margin: 0;
     position: relative;
     @include breakpoint($tablet, $no-query: '.no-mq') {
@@ -62,7 +65,7 @@ nav {
       font-size: 100%;
     }
     @include breakpoint($phone) {
-    border-bottom: 1px solid lighten($color-one, 15%);
+    border-bottom: 1px solid #ccc;
       &.last {
         border-bottom: 0;
       }
@@ -78,6 +81,12 @@ nav {
   }
   a, a:visited {
     text-decoration: none;
+    text-transform: uppercase;
+   // font-weight: 700;
+    color: #474747;
+    &:hover {
+      color:#111;
+    }
     &.active {
       @include breakpoint($tablet, $no-query: '.no-mq') {
         border-bottom: 2px solid #000;
@@ -100,7 +109,7 @@ nav {
 .menu-btn {
   @include btn(#efefef, #000, #999, 3px, $small);
   @include grad(#efefef, #ccc, $stop: 100%); 
-  font-family: $heading-font-family;
+  width: 100%;
   @include breakpoint($tablet, $no-query: '.no-mq') {
     display: none;
   }

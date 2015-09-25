@@ -90,5 +90,5 @@ features[weight][] = gallery
 features[weight][] = static_page
 features_exclude[dependencies][ctools] = ctools
 features_exclude[dependencies][site_config] = site_config
-mtime = 1442375344
+mtime = 1442375993
 project path = profiles/base/modules/features

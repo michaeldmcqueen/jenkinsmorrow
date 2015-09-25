@@ -16,4 +16,23 @@
       }
     }
   }
+  img {
+    width: 100%;
+    @include breakpoint($med-phone) {
+      width: 25%;
+      float: left;
+      padding-right: 1em;
+    }
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      width: 100%;
+    }
+  }
+  h4 {
+    margin-bottom: .25em;
+  }
+  h6 {
+    margin-top: 0;
+    color: inherit;
+    font-size: 110%;
+  }
 }

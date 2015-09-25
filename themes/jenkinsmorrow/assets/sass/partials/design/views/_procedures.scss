@@ -1,6 +1,10 @@
 .field-collection-item-field-procedure-detail {
-  padding: 1em 0;
+  padding: 1.5em 0;
+  p {
+    margin-bottom: 0;
+  }
   h6 {
+    color: inherit;
     @include breakpoint($tablet, $no-query: '.no-mq') {
       float: left;
       width: 150px;
